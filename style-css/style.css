@@ -177,6 +177,7 @@ header button {
 }
 
 .portfolio{
+    width: 60%;
     margin-top: 300px;
     display: grid;
     grid-template-columns: 400px 400px;
@@ -185,6 +186,7 @@ header button {
 .heading{
     margin-top:-50px;
     text-align: center;
+    width: 100px;
 }
 
 .heading h1 {
@@ -345,6 +347,7 @@ header button {
 }
 
 .bloc-text {
+    width: 80%;
     margin-top: 100px;
     display: grid;
     grid-template-columns: 150px 750px ;
@@ -630,9 +633,6 @@ ion-icon{
 
 /* @media ==> responsive petit écran 320 & min*/
 @media screen and (max-width:320px){
-    body{
-        overflow-y: hidden;
-    }
     header{
         padding: 0;
         left: 3%;
@@ -640,7 +640,7 @@ ion-icon{
     }
 
     .header-info {
-        background: #ffad00;
+        background: #FFA804;
         border-radius: 5px;
         width: 94vw;
         height: 40vh;
@@ -715,14 +715,38 @@ ion-icon{
     }
 
     .portfolio {
-        margin-top: 400px;
-        margin-top: 300px;
+        margin-top: 150px;
         display: grid;
+        grid-template-columns: 400px;
+        overflow: hidden;
+        box-sizing: border-box;
     }
 
+    .portfolio menu{
+        width: 100px;
+    }
+
+    .portfolio-menu ul{
+        border: 1pw solid red;
+        width: 400px;
+        margin-left: -150px;
+        align-items: center;
+        justify-content: left;
+    }
+   
+    .portfolio-menu ul li a {
+        font-size: 8px;
+        z-index: 100px;
+    } 
+
     .heading{
+        margin-top: 100px;
         margin-left: 20px;
         text-align: left;
+    }
+    
+    .heading h1{
+      width: auto;
     }
 
     .heading:before{
@@ -783,6 +807,7 @@ ion-icon{
     background: url("../images/portfolio5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: 100%;
     margin-left: 5px;
 }
 
@@ -867,6 +892,11 @@ ion-icon{
 	 color: gray;
 }
 
+.bloc-text{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
 .section{
     background: linear-gradient(transparent,rgba(19, 17, 12, 0.373)),url(../images/slider.jpg);
     background-repeat: no-repeat;
@@ -884,9 +914,6 @@ ion-icon{
 
 /* @media responsive d'écran 630px max & 321px min */
 @media screen and (max-width:630px) and (min-width:320px){
-    body{
-        overflow-y: hidden;
-    }
     header{
         padding: 0;
         left: 3%;
@@ -969,12 +996,39 @@ ion-icon{
     }
 
     .portfolio {
-        margin-top: 300px;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        box-sizing: border-box;
     }
 
+    .portfolio menu{
+        width: 200px;
+        
+    }
+
+    .portfolio-menu ul{
+        width: 400px;
+        margin-left: -150px;
+        align-items: center;
+        justify-content: left;
+    }
+   
+    .portfolio-menu ul li a {
+        font-size: 10px;
+        margin-left: 10px;
+        z-index: 100;
+    } 
+
     .heading{
+        margin-top: 200px;
         margin-left: 20px;
         text-align: left;
+    }
+    
+    .heading h1{
+      width: auto;
     }
 
     .heading:before{
