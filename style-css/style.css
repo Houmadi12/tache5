@@ -884,7 +884,9 @@ ion-icon{
 
 /* @media responsive d'écran 630px max & 321px min */
 @media screen and (max-width:630px) and (min-width:320px){
-        
+    body{
+        overflow-y: hidden;
+    }
     header{
         padding: 0;
         left: 3%;
