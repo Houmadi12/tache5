@@ -630,7 +630,9 @@ ion-icon{
 
 /* @media ==> responsive petit écran 320 & min*/
 @media screen and (max-width:320px){
-    
+    body{
+        overflow-y: hidden;
+    }
     header{
         padding: 0;
         left: 3%;
@@ -714,6 +716,8 @@ ion-icon{
 
     .portfolio {
         margin-top: 400px;
+        margin-top: 300px;
+        display: grid;
     }
 
     .heading{
@@ -1224,6 +1228,9 @@ ion-icon{
     }
     
     .section{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 90px;
     }
 
